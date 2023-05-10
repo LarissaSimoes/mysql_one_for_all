@@ -1,5 +1,4 @@
-SELECT
-usuario.usuario_nome AS pessoa_usuaria,
+SELECT usuario.usuario_nome AS pessoa_usuaria,
 CASE
 WHEN YEAR(MAX(historico_reproducao.data_de_reproducao)) >= 2021 THEN 'Ativa'
 ELSE 'Inativa'
